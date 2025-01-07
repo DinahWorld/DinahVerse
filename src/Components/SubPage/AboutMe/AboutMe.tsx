@@ -23,8 +23,7 @@ const AboutMe = () => {
                         <AboutMePicture/>
                     </Grid>
                 }
-                <Grid item container xs={11} sm={11} md={11} lg={5} xl={3} direction={"column"} gap={2}>
-
+                <Grid item container xs={11} sm={11} md={11} lg={5} xl={5} direction={"column"} gap={2}>
                     <Grid item container
                           xs={11} sm={11} md={6} lg={5}
                           gap={3}

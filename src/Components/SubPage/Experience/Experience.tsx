@@ -33,14 +33,27 @@ const Experience = () => {
                 </Grid>
                 <Grid container item xs={12} gap={10} justifyContent={"center"} alignItems={"center"}>
                     <ExperienceCard
+                        job={2}
+                        url={"assets/experience/sg.png"}
+                        deg={-10}
+                        title={"VIE : Software Engineer"}
+                        location={"Wan Chai, Hong Kong"}
+                        company={"Societe Generale CIB"}
+                        date={"2025/01 - Present"}
+                        description={"" +
+                            "Soon..."
+                        }
+                    />
+                    <ExperienceCard
                         job={1}
                         url={"assets/experience/bnp.png"}
                         deg={10}
-                        title={"Internship : Software Engineer"}
+                        title={"Apprenticeship : Software Engineer"}
+                        location={"Paris, France"}
                         company={"BNP Paribas CIB"}
-                        date={"2022/09 - Present"}
+                        date={"2022/09 - 2024/09"}
                         description={"" +
-                            "I am currently involved in a Big Data project, working on a monolithic application designed to process significant volumes of data for Business Analytics (BA).\n\n" +
+                            "Involved in a Big Data project, working on a monolithic application designed to process significant volumes of data for Business Analytics (BA).\n\n" +
                             "My responsibilities encompass the implementation of new controllers and services, troubleshooting production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
                             "Additionally, I have contributed to DevOps activities using Jenkins."
                         }
@@ -50,6 +63,7 @@ const Experience = () => {
                         url={"assets/experience/chart.png"}
                         deg={-10}
                         company={"Laboratoire CHart"}
+                        location={"Saint-Denis, France"}
                         date={"2022/04 - 2022/07"}
                         title={"Internship : Software Engineer"}
                         description={"During my internship as a Software Developer, I was immersed in Java development, specifically JavaFX.\n\n" +
@@ -61,6 +75,7 @@ const Experience = () => {
                         job={3}
                         url={"assets/experience/p8.png"}
                         deg={13}
+                        location={"Saint-Denis, France"}
                         company={"Universite Paris VIII"}
                         date={"2021/09 - 2021/12"}
                         title={"Student Tutor : Computer Science"}

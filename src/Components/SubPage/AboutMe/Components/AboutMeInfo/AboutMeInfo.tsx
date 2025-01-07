@@ -24,17 +24,17 @@ const AboutMeInfo = () => {
                 <Grid container item xs={12} gap={2}>
                     <Grid item xs={12}>
                         <Typography fontSize={"1rem"} color={"#2e2e2e"}>
-                            <strong>I am Dinath Sunthararajah, a 22-year-old </strong>driven by an insatiable passion
+                            <strong>I am Dinath Sunthararajah, a 23-year-old </strong>driven by an insatiable passion
                             for
                             technology and
-                            innovation. Based in Paris, France, I have embraced a journey filled with challenges,
-                            fueled
-                            by a deep belief in the power of technological progress to transform the
-                            world. <br/><br/>
-                            <strong>Currently honing my skills and gaining valuable experience</strong>, I work as an
-                            apprentice
-                            back-end
-                            developer at BNP Paribas CIB.
+                            innovation. Currently based in Hong Kong, I am on a VIE (Volontariat International en
+                            Entreprise)
+                            program, working as a Software Engineer at Societe Generale CIB.
+
+                            <br/><br/>
+                            <strong>Currently honing my skills and gaining valuable experience</strong>,, I focus on
+                            back-end development,
+                            contributing to impactful projects that leverage technology to transform the world.
                             <br/><br/>
                             <strong>Beyond the technological realm,</strong> I am an enthusiastic traveler, captivated
                             by the richness of

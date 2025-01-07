@@ -10,6 +10,7 @@ interface EducationCardProps {
     description: string,
     deg: number,
     url: string,
+    location: string,
     job: number,
     company: string,
     date: string,
@@ -143,16 +144,26 @@ const ExperienceCard = (props: EducationCardProps) => {
                                 </Grid>
                             }
                         </Grid>
-
                         <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.9rem"} fontWeight={"bold"}>
+                            <Typography lineHeight={1.1} fontSize={"0.9rem"} fontWeight={"bold"}
+                                        style={{marginBottom: "0.5rem"}}>
                                 {props.company}
                             </Typography>
                         </Grid>
-                        <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.7rem"} fontStyle={"italic"} fontWeight={"bold"}>
-                                {props.date}
-                            </Typography>
+                        <Grid container item xs={12} gap={0.1} alignItems={"center"}>
+
+
+                            <Grid item xs={12}>
+                                <Typography lineHeight={1.1} fontSize={"0.8rem"} fontWeight={"bold"}>
+                                    {props.location}
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Typography lineHeight={1.1} fontSize={"0.7rem"} fontStyle={"italic"}
+                                            fontWeight={"bold"}>
+                                    {props.date}
+                                </Typography>
+                            </Grid>
                         </Grid>
                     </Grid>
 
