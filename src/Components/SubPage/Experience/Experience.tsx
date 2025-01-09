@@ -34,32 +34,32 @@ const Experience = () => {
                 <Grid container item xs={12} gap={10} justifyContent={"center"} alignItems={"center"}>
                     <ExperienceCard
                         job={2}
+                        competencies={4}
                         url={"assets/experience/sg.png"}
                         deg={-10}
                         title={"VIE : Software Engineer"}
                         location={"Wan Chai, Hong Kong"}
                         company={"Societe Generale CIB"}
                         date={"2025/01 - Present"}
-                        description={"" +
-                            "Soon..."
-                        }
+                        description={"As a Software Engineer in the Front Office, I work on a project that processes incoming data to calculate P&L metrics for traders.\n"}
                     />
                     <ExperienceCard
                         job={1}
+                        competencies={1}
                         url={"assets/experience/bnp.png"}
                         deg={10}
                         title={"Apprenticeship : Software Engineer"}
                         location={"Paris, France"}
                         company={"BNP Paribas CIB"}
                         date={"2022/09 - 2024/09"}
-                        description={"" +
-                            "Involved in a Big Data project, working on a monolithic application designed to process significant volumes of data for Business Analytics (BA).\n\n" +
-                            "My responsibilities encompass the implementation of new controllers and services, troubleshooting production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
-                            "Additionally, I have contributed to DevOps activities using Jenkins."
-                        }
+                        description={"In the Middle Office, I was responsible for managing client portfolios and data. I contributed to a Spring Boot project featuring a monolithic architecture, where I developed REST APIs and controllers to enhance system functionality and maintainability. My work also included programming batch applications and migration jobs using Scala and Spark.\n" +
+                            "\n" +
+                            "I focused on optimizing memory usage in the Java Virtual Machine (JVM) through refactoring, significantly improving application performance. Additionally, I implemented DevOps practices utilizing Jenkins and monitored system performance and resource usage with Grafana. To foster collaboration and enhance project outcomes, I applied Scrum methodology using JIRA.\n" +
+                            "\n"}
                     />
                     <ExperienceCard
                         job={2}
+                        competencies={2}
                         url={"assets/experience/chart.png"}
                         deg={-10}
                         company={"Laboratoire CHart"}
@@ -73,6 +73,7 @@ const Experience = () => {
                     />
                     <ExperienceCard
                         job={3}
+                        competencies={3}
                         url={"assets/experience/p8.png"}
                         deg={13}
                         location={"Saint-Denis, France"}

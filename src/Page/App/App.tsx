@@ -73,7 +73,7 @@ const App = () => {
                 </Grid>
                 <Grid item xs={12}>
                     <AboutMe/>
-                </Grid>¬
+                </Grid>
                 <Education/>
                 <Grid item xs={12} justifyContent={"center"} alignItems={"center"}>
                     <Experience/>

@@ -79,7 +79,7 @@ const Slidebar: React.FC<SlidebarProps> = ({length, first, second, imageNumber, 
     }, [isDragging]);
 
     return (
-        <Grid container className={"progress-bar"} sx={{width: "60vw"}}>
+        <Grid container className={"progress-bar"} sx={{width: "60vw"}} gap={0.2}>
             <Grid container item xs={12}>
                 <div style={{position: "relative", left: "-10px", fontSize: "0.7rem", fontStyle: "bold"}}>2016</div>
                 <div style={{position: "relative", left: `${firstN}px`, fontSize: "0.7rem", fontStyle: "bold"}}>2019

@@ -76,15 +76,14 @@ const Education = () => {
                             <Grid item xs={'auto'}>
                                 <EducationProfile imageNumber={imageNumber}/>
                             </Grid>
-                        </Grid>
 
-                        <Grid item container xs={12} justifyContent={"center"} alignItems={"center"}>
                             <Slidebar first={progressBarLength * 0.25}
                                       second={progressBarLength * 0.75}
                                       length={progressBarLength}
                                       imageNumber={imageNumber}
                                       onChangeImage={handleChangeImage}/>
                         </Grid>
+
 
                     </Grid>
                     {isScreenSmallerThanMD && <EducationInfo imageNumber={imageNumber}/>}

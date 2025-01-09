@@ -12,6 +12,7 @@ interface EducationCardProps {
     url: string,
     location: string,
     job: number,
+    competencies: number,
     company: string,
     date: string,
 
@@ -35,7 +36,7 @@ const ExperienceCard = (props: EducationCardProps) => {
     const isScreenLowerThanMD = useMediaQuery(theme.breakpoints.down('md'));
 
     const stack = () => {
-        switch (props.job) {
+        switch (props.competencies) {
             case 1:
                 return (
                     <Grid item container xs={12} gap={2} alignItems={"center"}
@@ -51,6 +52,9 @@ const ExperienceCard = (props: EducationCardProps) => {
                         </Grid>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/spark.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/scala.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/jenkins.svg"}/>
@@ -96,6 +100,39 @@ const ExperienceCard = (props: EducationCardProps) => {
                         </Grid>
                     </Grid>
                 );
+            case 4:
+                return (
+                    <Grid item container xs={12} gap={2} alignItems={"center"}
+                          justifyContent={{xs: "center", sm: "center", md: "start"}}>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/spring_boot.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/java.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/postgresql.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/hbase.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/azure.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/spark.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/scala.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/jenkins.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/jira.svg"}/>
+                        </Grid>
+                    </Grid>
+                );
         }
 
     }
@@ -123,10 +160,11 @@ const ExperienceCard = (props: EducationCardProps) => {
                                 hidden: {opacity: 0}
                             }}>
                     <Grid item container xs={12} sx={{marginBottom: "2rem"}}>
-                        <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}>
+                        <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}
+                              style={{marginBottom: "0.3rem"}}>
                             <Grid item xs={9}>
                                 <Typography lineHeight={1.1} fontSize={"1.3rem"} fontWeight={"bold"}>
-                                    {props.title}
+                                    <u> {props.title}</u>
                                 </Typography>
                             </Grid>
                             {isScreenLowerThanMD &&
@@ -144,15 +182,13 @@ const ExperienceCard = (props: EducationCardProps) => {
                                 </Grid>
                             }
                         </Grid>
-                        <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.9rem"} fontWeight={"bold"}
-                                        style={{marginBottom: "0.5rem"}}>
-                                {props.company}
-                            </Typography>
-                        </Grid>
+
                         <Grid container item xs={12} gap={0.1} alignItems={"center"}>
-
-
+                            <Grid item xs={12}>
+                                <Typography lineHeight={1.1} fontSize={"0.9rem"} fontWeight={"bold"}>
+                                    {props.company}
+                                </Typography>
+                            </Grid>
                             <Grid item xs={12}>
                                 <Typography lineHeight={1.1} fontSize={"0.8rem"} fontWeight={"bold"}>
                                     {props.location}
