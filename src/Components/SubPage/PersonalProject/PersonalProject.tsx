@@ -95,7 +95,7 @@ const PersonalProject = () => {
                         />
 
                         <ProjectCard stack={"ANGULAR - JAVA - SPRING BOOT - FIGMA"}
-                                     title={"Dinatoon"}
+                                     title={"DinaToon"}
                                      img={"assets/projects/dinatoon.png"}
                                      github={"assets/stack/epic.svg"}
                                      number={1}
