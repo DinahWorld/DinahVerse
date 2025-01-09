@@ -94,6 +94,14 @@ const PersonalProject = () => {
                                      url={"https://dinahworld.github.io/DinahWorld-Portfolio/"}
                         />
 
+                        <ProjectCard stack={"ANGULAR - JAVA - SPRING BOOT - FIGMA"}
+                                     title={"Dinatoon"}
+                                     img={"assets/projects/dinatoon.png"}
+                                     github={"assets/stack/epic.svg"}
+                                     number={1}
+                                     url={"https://github.com/DinahWorld/DinaToon"}
+                        />
+
                         <ProjectCard stack={"VUEJS - C# - POSTGRESQL - FIGMA"}
                                      title={"Epic Road Trip"}
                                      img={"assets/projects/epic_road_trip.png"}
